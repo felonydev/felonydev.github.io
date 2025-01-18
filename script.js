@@ -35,7 +35,7 @@ function displayData(data, page) {
                 <tr>
                     <th>Rank</th>
                     <th>Player</th>
-                    <th>Score</th>
+                    <th>Points</th>
                     <th>Combo</th> <!-- Switched position: Combo now comes before Car -->
                     <th>Car</th>
                     <th>Map</th>
