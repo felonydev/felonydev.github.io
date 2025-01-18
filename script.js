@@ -1,6 +1,6 @@
 // script.js
 let currentPage = 1; // Track the current page
-const apiUrlBase = 'http://localhost:3000/leaderboard'; // Base API URL
+const apiUrlBase = 'https://felonydev-github-io.onrender.com/leaderboard'; // Base API URL
 const playersPerPage = 20; // Number of players per page
 
 // Function to fetch data from the API
