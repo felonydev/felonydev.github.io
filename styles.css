@@ -8,7 +8,7 @@ html, body {
 
 /* Set the background of the entire page to a local image */
 body {
-    background-image: url('images/background.jpg'); /* Path to your local image */
+    background-image: url('background.jpg'); /* Path to your local image */
     background-size: cover; /* Ensures the image covers the entire background */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
