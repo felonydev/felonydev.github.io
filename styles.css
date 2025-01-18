@@ -1,20 +1,47 @@
 /* styles.css */
-/* Set the background of the entire page to black and all text to white */
-body {
-    background-color: black;
-    color: white; /* Set default text color to white */
-    font-family: 'Inter', sans-serif; /* Use Inter font */
-    font-weight: 500; /* Set font weight to Medium (500) */
+/* Ensure the html and body elements take up the full height of the page */
+html, body {
+    height: 100%; /* Make sure the body and html take up the full height */
     margin: 0;
     padding: 0;
 }
 
-/* Ensure all text inside the container is white */
+/* Set the background of the entire page to a local image */
+body {
+    background-image: url('images/background.jpg'); /* Path to your local image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    color: white; /* Set default text color to white */
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    font-weight: 500; /* Set font weight to Medium (500) */
+    display: flex;
+    flex-direction: column; /* Ensure the body is a column layout */
+}
+
+/* Add a semi-transparent overlay that covers the entire page */
+body::before {
+    content: '';
+    position: fixed; /* Use fixed to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: -1; /* Place the overlay behind the content */
+}
+
+/* Ensure the container takes up the remaining space and centers the table */
 .container {
+    flex: 1; /* Allow the container to grow and fill the remaining space */
     max-width: 1600px; /* Increase max-width to extend the table */
+    width: 100%;
     margin: 3rem auto; /* Center the container */
     padding: 0 15px;
     color: white !important; /* Force all text inside the container to white */
+    position: relative; /* Ensure content stays above the overlay */
+    z-index: 1; /* Place content above the overlay */
 }
 
 /* Make the entire table transparent and text white */
