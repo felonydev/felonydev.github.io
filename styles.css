@@ -1,0 +1,137 @@
+/* styles.css */
+/* Set the background of the entire page to black and all text to white */
+body {
+    background-color: black;
+    color: white; /* Set default text color to white */
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    font-weight: 500; /* Set font weight to Medium (500) */
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure all text inside the container is white */
+.container {
+    max-width: 1600px; /* Increase max-width to extend the table */
+    margin: 3rem auto; /* Center the container */
+    padding: 0 15px;
+    color: white !important; /* Force all text inside the container to white */
+}
+
+/* Make the entire table transparent and text white */
+.table {
+    width: 100%; /* Use 100% of the container width */
+    border-collapse: collapse; /* Ensure borders are collapsed */
+    margin-top: 20px;
+    background-color: transparent !important; /* Fully transparent background */
+    color: white !important; /* Force table text to white */
+    padding-right: 50px; /* Add padding to the right to extend the table */
+}
+
+/* Table header and cell styling */
+.table th,
+.table td {
+    padding: 15px; /* Increase padding for bigger rows */
+    text-align: center; /* Center text in headers and cells */
+    vertical-align: middle; /* Align content vertically in the middle */
+    background-color: transparent !important; /* Fully transparent background for cells */
+    border: none !important; /* Remove all borders */
+    color: white !important; /* Force text in cells to white */
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    font-weight: 500; /* Set font weight to Medium (500) */
+}
+
+/* Table header specific styling */
+.table th {
+    font-weight: 600; /* Set header font weight to Semi-Bold (600) */
+    cursor: pointer; /* Indicate that headers are clickable */
+    color: white !important; /* Ensure header text is white */
+}
+
+/* Striped rows with slight transparency */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(17, 17, 17, 0.3) !important; /* Slightly lighter black with transparency */
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: transparent !important; /* Fully transparent for even rows */
+}
+
+/* Avatar styling */
+.avatar {
+    width: 50px; /* Set avatar size */
+    height: 50px;
+    border-radius: 50%; /* Make the avatar circular */
+    object-fit: cover; /* Ensure the image fits well */
+    vertical-align: middle; /* Align avatar vertically in the middle */
+}
+
+/* Ensure grid alignment for player names and avatars */
+.d-flex {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Avatar on the left, player name takes remaining space */
+    align-items: center; /* Vertically center align items */
+    gap: 10px; /* Add space between avatar and player name */
+}
+
+/* Center player names horizontally */
+.player-name {
+    text-align: left; /* Align player name text to the left */
+    color: white !important; /* Ensure player name text is white */
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    font-weight: 500; /* Set font weight to Medium (500) */
+}
+
+/* Prevent text wrapping in Map column */
+.table td:nth-child(6) { /* Target the 6th column (Map) */
+    white-space: nowrap; /* Prevent text from wrapping */
+    min-width: 150px; /* Set a minimum width for the column */
+}
+
+/* Prevent text wrapping in Car column */
+.table td:nth-child(5) { /* Target the 5th column (Car) */
+    white-space: nowrap; /* Prevent text from wrapping */
+    min-width: 150px; /* Set a minimum width for the column */
+}
+
+/* Prevent text wrapping in Avg Speed column */
+.table td:nth-child(7) { /* Target the 7th column (Avg Speed) */
+    white-space: nowrap; /* Prevent text from wrapping */
+    min-width: 120px; /* Set a minimum width for the column */
+}
+
+/* Pagination button styling */
+.btn-outline-primary {
+    color: white !important; /* Set text color to white */
+    border-color: white !important; /* Set border color to white */
+    background-color: transparent; /* Transparent background */
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    font-weight: 500; /* Set font weight to Medium (500) */
+}
+
+.btn-outline-primary:hover {
+    color: black !important; /* Change text color to black on hover */
+    background-color: white !important; /* Change background color to white on hover */
+}
+
+/* Ensure all text inside buttons is white */
+.btn-primary {
+    color: black !important; /* Set text color to black for active button */
+    background-color: white !important; /* Set background color to white */
+    border-color: white !important; /* Set border color to white */
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    font-weight: 500; /* Set font weight to Medium (500) */
+}
+
+/* Ensure all text inside pagination buttons is white */
+#pagination button {
+    color: white !important; /* Force text in pagination buttons to white */
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    font-weight: 500; /* Set font weight to Medium (500) */
+}
+
+/* Ensure all text inside pagination buttons is black on hover */
+#pagination button:hover {
+    color: black !important; /* Change text color to black on hover */
+}
